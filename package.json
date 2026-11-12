@@ -1,0 +1,54 @@
+{
+  "name": "local-fish-panel",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "lib/index.js",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "engines": {
+    "dsh": ">=0.2.1-rc.2 <0.3.0-0"
+  },
+  "dshGo": {
+    "v": 1,
+    "title": {
+      "zh": "鱼·观测台",
+      "en": "Fish"
+    },
+    "icon": "heart",
+    "contributes": {
+      "panels": [
+        {
+          "id": "fish",
+          "title": "鱼·观测台",
+          "icon": "heart",
+          "placement": [
+            "session.tab",
+            "features",
+            "chat.panel"
+          ]
+        },
+        {
+          "id": "fish-settings",
+          "title": "鱼·设置",
+          "icon": "settings",
+          "placement": [
+            "session.tab",
+            "features",
+            "chat.panel"
+          ]
+        }
+      ],
+      "composer.strip": [
+        {
+          "id": "fishstrip",
+          "icon": "heart",
+          "panel": "fish"
+        }
+      ]
+    }
+  }
+}
