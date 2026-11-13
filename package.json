@@ -1,6 +1,6 @@
 {
   "name": "local-fish-panel",
-  "version": "0.1.0",
+  "version": "0.4.0",
   "private": true,
   "type": "module",
   "main": "lib/index.js",
@@ -26,19 +26,7 @@
           "title": "鱼·观测台",
           "icon": "heart",
           "placement": [
-            "session.tab",
-            "features",
-            "chat.panel"
-          ]
-        },
-        {
-          "id": "fish-settings",
-          "title": "鱼·设置",
-          "icon": "settings",
-          "placement": [
-            "session.tab",
-            "features",
-            "chat.panel"
+            "plugin"
           ]
         }
       ],
